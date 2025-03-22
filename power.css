@@ -1,0 +1,30 @@
+.power-section {
+    width: 500px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the section horizontally */
+    font-family: sans-serif; /* Choose a font that fits the DBD vibe */
+  }
+  
+  .power-header {
+    background-color: #8B4513; /* Brown color */
+    height: 50px; /* Adjust height as needed */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the icon */
+    position: relative; /* For positioning the icon */
+  }
+  
+  .power-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    position: absolute; /* Position relative to the header */
+    left: 10px; /* Adjust spacing from the left */
+    background-image: url('path/to/your/power-icon.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensure image covers the square */
+    border: 2px solid #000; /* Add a border if needed */
+  }
+  
+  .power-content {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Add padding for spacing */
+    min-height: 200px; /* Set a minimum height */
+  }
