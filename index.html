@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DbD Concepts</title>
-    <link rel="stylesheet" href="power.css">
-    <script src="power-template.js"></script> 
+    <title>Navigation Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="power-container"> 
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Concepts</button>
+            <div class="dropdown-content">
+                <a href="concept1.html">Concept 1</a>
+                <a href="concept2.html">Concept 2</a>
+                <a href="concept3.html">Concept 3</a>
+            </div>
         </div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <script>
-        const powerContainer = document.getElementById('power-container');
-
-        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Cat', 'Content about cat.');
-        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Dog', 'Content about dog.');
-        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Bird', 'Content about bird.');
-    </script>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content of the page.</p>
+    </div>
 </body>
 </html>
