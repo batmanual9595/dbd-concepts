@@ -35,7 +35,7 @@ body {
     color: #fff; /* White text for contrast */
     padding: 20px; /* Add padding for spacing */
     min-height: 200px; /* Set a minimum height */
-    margin-top: -100px; /* Adjust to control the overlap */
+    margin-top: -35px; /* Adjust to control the overlap */
 }
 
 .header-text {
