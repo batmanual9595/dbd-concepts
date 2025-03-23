@@ -38,7 +38,7 @@ nav a:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -68,34 +68,137 @@ body {
     margin: 0;
 }
 
-.power-icon-container, .power-text-container, .character-portrait-container {
+.power-icon-container,
+.power-text-container,
+.character-portrait-container {
     position: absolute;
 }
 
 .power-icon-container {
-    top: 300px;
+    top: 280px;
     left: 20px;
-    width: 100px;
-    height: 100px;
 }
 
 .power-text-container {
-    top: 350px;
+    top: 390px;
     left: 20px;
-    width: 400px;
-    height: 300px;
 }
 
 .character-portrait-container {
-    top: 25px;
+    top: 70px;
     left: 20px;
-    width: 200px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
 }
 
 /* Style the images to fit their containers */
-.power-icon-container img, .power-text-container img, .character-portrait-container img {
+.power-icon-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Or 'cover' if you want it to fill the container */
+    max-width: 100px;
+    /* Adjust this value to your desired maximum width */
+    max-height: 100px;
+    /* Adjust this value to your desired maximum height */
+    object-fit: contain;
+    /* Keeps the aspect ratio */
+}
+
+.power-text-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    /* Adjust this value to your desired maximum width */
+    max-height: 1000px;
+    /* Adjust this value to your desired maximum height */
+    object-fit: contain;
+    /* Keeps the aspect ratio */
+}
+
+.character-portrait-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    /* Adjust this value to your desired maximum width */
+    max-height: 200px;
+    /* Adjust this value to your desired maximum height */
+    object-fit: contain;
+    /* Keeps the aspect ratio */
+}
+
+/* Style the card */
+
+.power-card {
+    top: 375px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust the alpha value for background opacity */
+    color: white;
+    padding: 0px;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-bar {
+    background-color: #8B4513; /* Brown color */
+    background-image: url('PowerBanner.png');
+    padding: 10px 15px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Add space between the title bar and content */
+    background-size: auto 100%; /* Change to contain */
+    background-position: left; /* Keep center position */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 50px;
+}
+
+.title-bar h1 {
+    font-size: 1.5em; /* Adjust font size */
+    margin: 0;
+    padding: 0px 20px;
+}
+
+.power-card h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    padding: 0px 5px;
+    font-weight: bold;
+}
+
+.power-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    top:15px;
+    left:15px;
+}
+
+.power-card q {
+    color: #dad8a2;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+.power-card h2 {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+
+.power-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.power-card li {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.title-bar, .title-bar h1, .power-card h1, .power-card p,
+.power-card q, .power-card h2, .power-card ul, .power-card li {
+    opacity: 1;
 }
