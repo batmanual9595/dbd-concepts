@@ -1,3 +1,7 @@
+body {
+    margin: 0; /* Remove default body margin */
+}
+
 .power-section {
     width: 500px; /* Adjust width as needed */
     margin: 20px auto; /* Center the section horizontally */
@@ -20,10 +24,11 @@
 }
 
 .power-icon {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 50px; /* Match height of power-header */
+    height: 50px; /* Match height of power-header */
     border: 2px solid #000;
     margin-right: 10px; /* Add some space between the image and the header */
+    object-fit: cover; /* Cover the area without distortion */
 }
 
 .power-content {
