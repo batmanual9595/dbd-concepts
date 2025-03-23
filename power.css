@@ -24,10 +24,9 @@ body {
 }
 
 .power-icon {
-    width: 50px; /* Match height of power-header */
-    height: 50px; /* Match height of power-header */
+    width: 75px; /* Match height of power-header */
+    height: 75px; /* Match height of power-header */
     border: 2px solid #000;
-    margin-right: 10px; /* Add some space between the image and the header */
     object-fit: cover; /* Cover the area without distortion */
 }
 
