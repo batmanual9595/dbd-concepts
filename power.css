@@ -17,7 +17,7 @@
     height: 40px; /* Adjust size as needed */
     position: absolute; /* Position relative to the header */
     left: 10px; /* Adjust spacing from the left */
-    background-image: url('path/to/your/power-icon.jpg'); /* Replace with your image path */
+    background-image: url('cat.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensure image covers the square */
     border: 2px solid #000; /* Add a border if needed */
   }
