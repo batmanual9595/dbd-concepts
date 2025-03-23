@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DbD Concepts</title>
     <link rel="stylesheet" href="power.css">
+    <script src="power-template.js"></script> 
 </head>
 <body>
-    <div class="power-section">
-        <div class="power-row">
-            <img class="power-icon" src="cat.jpg" alt="cat">
-            <div class="power-header">
-                <span class="header-text">hello!</span> 
-            </div>
+    <div id="power-container"> 
         </div>
-        <div class="power-content">
-            hello!
-        </div>
-    </div>
+
+    <script>
+        const powerContainer = document.getElementById('power-container');
+
+        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Cat', 'Content about cat.');
+        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Dog', 'Content about dog.');
+        powerContainer.innerHTML += createPowerSection('cat.jpg', 'Hello from Bird', 'Content about bird.');
+    </script>
 </body>
 </html>
