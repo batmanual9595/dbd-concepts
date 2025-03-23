@@ -4,20 +4,27 @@
     font-family: sans-serif; /* Choose a font that fits the DBD vibe */
   }
   
+  .power-row {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items in the flex container */
+  }
+  
   .power-header {
     background-color: #8B4513; /* Brown color */
     height: 50px; /* Adjust height as needed */
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Vertically center the icon */
+    align-items: center; /* Vertically center the text */
     position: relative; /* For positioning the icon */
+    flex-grow: 1; /* Allow the header to take up remaining space */
   }
   
   .power-icon {
     width: 40px; /* Adjust size as needed */
     height: 40px; /* Adjust size as needed */
     border: 2px solid #000;
+    margin-right: 10px; /* Add some space between the image and the header */
   }
-
+  
   .power-content {
     background-color: #000; /* Black background */
     color: #fff; /* White text for contrast */
