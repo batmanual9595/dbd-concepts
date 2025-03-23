@@ -11,6 +11,7 @@ body {
 .power-row {
     display: flex; /* Use flexbox to align items horizontally */
     align-items: center; /* Vertically align items in the flex container */
+    position: relative; /* Needed for positioning the row */
 }
 
 .power-header {
@@ -18,16 +19,16 @@ body {
     height: 50px; /* Adjust height as needed */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Vertically center the text */
-    position: relative; /* For positioning the icon */
     flex-grow: 1; /* Allow the header to take up remaining space */
     padding-left: 10px; /* Add padding for spacing */
 }
 
 .power-icon {
-    width: 75px; /* Match height of power-header */
-    height: 75px; /* Match height of power-header */
+    width: 75px; /* Adjust width as needed */
+    height: 75px; /* Adjust height as needed */
     border: 2px solid #000;
     object-fit: cover; /* Cover the area without distortion */
+    margin-right: 10px; /* Add some space between the image and the header */
 }
 
 .power-content {
@@ -35,6 +36,7 @@ body {
     color: #fff; /* White text for contrast */
     padding: 20px; /* Add padding for spacing */
     min-height: 200px; /* Set a minimum height */
+    margin-top: -35px; /* Adjust to control the overlap */
 }
 
 .header-text {
