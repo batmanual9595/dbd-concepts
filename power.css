@@ -36,6 +36,7 @@ body {
     padding: 20px; /* Add padding for spacing */
     min-height: 200px; /* Set a minimum height */
     margin-top: -35px; /* Adjust to control the overlap */
+    padding-top: 50px;
 }
 
 .header-text {
