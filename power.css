@@ -1,46 +1,44 @@
 body {
-    margin: 0;
+    margin: 0; /* Remove default body margin */
 }
 
 .power-section {
-    width: 500px;
-    margin: 20px auto;
-    font-family: sans-serif;
+    width: 500px; /* Adjust width as needed */
+    margin: 20px auto; /* Center the section horizontally */
+    font-family: sans-serif; /* Choose a font that fits the DBD vibe */
 }
 
 .power-row {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items in the flex container */
+    position: relative; /* Needed for positioning the row */
 }
 
 .power-header {
-    background-color: #8B4513;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding-left: 85px; /* Adjust padding to compensate for removed margin */
-    position: relative; /* Needed for z-index */
-    z-index: 2; /* Ensure text is above image */
+    background-color: #8B4513; /* Brown color */
+    height: 50px; /* Adjust height as needed */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the text */
+    flex-grow: 1; /* Allow the header to take up remaining space */
+    padding-left: 10px; /* Add padding for spacing */
 }
 
 .power-icon {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    position: relative; /* Needed for positioning */
-    z-index: 1; /* Ensure image is behind text */
+    width: 75px; /* Adjust width as needed */
+    height: 75px; /* Adjust height as needed */
+    border: 2px solid #000;
+    object-fit: cover; /* Cover the area without distortion */
 }
 
 .power-content {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    min-height: 200px;
-    margin-top: -35px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    padding: 20px; /* Add padding for spacing */
+    min-height: 200px; /* Set a minimum height */
+    margin-top: -100px; /* Adjust to control the overlap */
 }
 
 .header-text {
-    color: white;
+    /* Optional: Style the text inside the header */
+    color: white; /* Example: White text */
 }
